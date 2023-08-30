@@ -44,7 +44,7 @@ body {
     filter: blur(40px);
     -webkit-clip-path: polygon(26% 0, 66% 0, 92% 0, 100% 8%, 100% 89%, 91% 100%, 7% 100%, 0 92%, 0 0);
     clip-path: polygon(26% 0, 66% 0, 92% 0, 100% 8%, 100% 89%, 91% 100%, 7% 100%, 0 92%, 0 0);
-    background: rgba(122, 251, 255, 0.5568627451);
+    background: #7afbff8e;
     transition: all 1s ease-in-out;
 }
 
@@ -53,8 +53,8 @@ body {
     position: absolute;
     width: 98%;
     height: 98%;
-    box-shadow: inset 0px 0px 20px 20px #212121;
-    background: repeating-linear-gradient(to bottom, transparent 0%, rgba(64, 144, 181, 0.6) 1px, rgb(0, 0, 0) 3px, hsl(295, 60%, 12%) 5px, #153544 4px, transparent 0.5%), repeating-linear-gradient(to left, hsl(295, 60%, 12%) 100%, hsla(295, 60%, 12%, 0.99) 100%);
+    box-shadow: inset 0px 0px 20px 20px rgb(33, 33, 33);
+    background: repeating-linear-gradient(to bottom, transparent 0%, #4090b599 1px, #000000 3px, #2e0c31 5px, #153544 4px, transparent 0.5%), repeating-linear-gradient(to left, #2e0c31 100%, #2e0c31fc 100%);
     -webkit-clip-path: polygon(26% 0, 31% 5%, 61% 5%, 66% 0, 92% 0, 100% 8%, 100% 89%, 91% 100%, 7% 100%, 0 92%, 0 0);
     clip-path: polygon(26% 0, 31% 5%, 61% 5%, 66% 0, 92% 0, 100% 8%, 100% 89%, 91% 100%, 7% 100%, 0 92%, 0 0);
     animation: backglitch 50ms linear infinite;
@@ -92,12 +92,12 @@ body {
     padding-block: 0.7em;
     border: none;
     transition: all 1s ease-in-out;
-    border-bottom: 1px solid hsl(221, 26%, 43%);
+    border-bottom: 1px solid #51638a;
 }
 
 .input-is:hover {
     transition: all 1s ease-in-out;
-    background: linear-gradient(90deg, transparent 0%, rgba(102, 224, 255, 0.2) 27%, rgba(102, 224, 255, 0.2) 63%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, #66e0ff33 27%, #66e0ff33 63%, transparent 100%);
 }
 
 .input-content:focus-within::before {
@@ -107,9 +107,9 @@ body {
 
 .input-is:focus {
     outline: none;
-    border-bottom: 1px solid hsl(192, 100%, 100%);
+    border-bottom: 1px solid #ffffff;
     color: hsl(192, 100%, 88%);
-    background: linear-gradient(90deg, transparent 0%, rgba(102, 224, 255, 0.2) 27%, rgba(102, 224, 255, 0.2) 63%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, #66e0ff33 27%, #66e0ff33 63%, transparent 100%);
 }
 
 .input-is::-moz-placeholder {
@@ -126,7 +126,7 @@ body {
     }
 
     50% {
-        box-shadow: inset 0px -20px 20px 30px hsl(297, 42%, 10%);
+        box-shadow: inset 0px -20px 20px 30px #230f24;
     }
 
     to {
@@ -150,29 +150,34 @@ body {
 
 @keyframes blinkShadowsFilter {
     0% {
-        filter: drop-shadow(46px 36px 28px rgba(64, 144, 181, 0.3411764706)) drop-shadow(-55px -40px 28px #9e30a9);
+        filter: drop-shadow(46px 36px 28px #4090b557) drop-shadow(-55px -40px 28px #9e30a9);
     }
 
     25% {
-        filter: drop-shadow(46px -36px 24px rgba(64, 144, 181, 0.8980392157)) drop-shadow(-55px 40px 24px #9e30a9);
+        filter: drop-shadow(46px -36px 24px #4090b5e5) drop-shadow(-55px 40px 24px #9e30a9);
     }
 
     50% {
-        filter: drop-shadow(46px 36px 30px rgba(64, 144, 181, 0.8980392157)) drop-shadow(-55px 40px 30px rgba(159, 48, 169, 0.2941176471));
+        filter: drop-shadow(46px 36px 30px #4090b5e5) drop-shadow(-55px 40px 30px #9f30a94b);
     }
 
     75% {
-        filter: drop-shadow(20px -18px 25px rgba(64, 144, 181, 0.8980392157)) drop-shadow(-20px 20px 25px rgba(159, 48, 169, 0.2941176471));
+        filter: drop-shadow(20px -18px 25px #4090b5e5) drop-shadow(-20px 20px 25px #9f30a94b);
     }
 
     to {
-        filter: drop-shadow(46px 36px 28px rgba(64, 144, 181, 0.3411764706)) drop-shadow(-55px -40px 28px #9e30a9);
+        filter: drop-shadow(46px 36px 28px #4090b557) drop-shadow(-55px -40px 28px #9e30a9);
     }
 }
 
 #botaoEntrar{
     padding: 0;
     margin-left: 30%;
-    background-color: aqua;
+    color: #9e30a9;
+    background-color: #1796d1;
     width: 80px;
+}
+#botaoEntrar:hover{
+    color: #12a1e4;
+    background-color: #9e30a9;
 }
