@@ -1,51 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-    <!-- nome
+<!-- nome
     cep
     rua
 bairro
 uf
 e-mail -->
+
 <body>
     <div class="divi">
-        <label for="nomea"><strong>Qual o seu nome?</strong></label>
+        <label for="nome"><strong>Qual o seu nome?</strong></label>
         <br>
-        <input type="text"  id="nome" required placeholder="Digite seu nome"/>
+        <input type="text" id="nome" required placeholder="Digite seu nome" />
     </div>
     <div class="divi">
-        <label for="cepa"><strong>Qual o seu cep</strong></label>
+        <label for="cep"><strong>Qual o seu cep</strong></label>
         <br>
-        <input type="text"  id="cep" placeholder="Digite seu cep" required />
+        <input type="text" id="cep" placeholder="Digite seu cep" required />
     </div>
+    <!-- Rua -->
     <div class="divi">
         <label for="rua"><strong>Qual o seu endereço</strong></label>
         <br>
-        <input type="text"  id="rua" placeholder="Digite seu endereço" required />
+        <input type="text" id="rua" placeholder="Digite seu endereço" required />
     </div>
+    <!-- Bairro -->
     <div class="divi">
-        <label for="bairro"><strong>Qual o seu Bairro</strong></label>
+        <label for="bairro"><strong>Qual o seu bairro</strong></label>
         <br>
-        <input type="text"  id="bairro" placeholder="Digite o seu bairro" required />
+        <input type="text" id="bairro" placeholder="Digite o seu bairro" required />
     </div>
+    <!-- Cidade -->
     <div class="divi">
-        <label for="Uf"><strong>Qual o seu estado</strong></label>
+        <label for="cidade"><strong>Qual a sua cidade</strong></label>
         <br>
-        <input type="text"  id="Uf" placeholder="Digite o seu estado" required />
+        <input type="text" id="cidade" placeholder="Digite a sua cidade" required />
     </div>
+    <!-- UF -->
     <div class="divi">
-        <label for="bairro"><strong>Qual o seu e-mail</strong></label>
+        <label for="uf"><strong>Qual o seu estado</strong></label>
         <br>
-        <input type="email" placeholder="Digite seu E-mail">
+        <input type="text" id="uf" placeholder="Digite o seu estado" required />
     </div>
+    <!-- E-mail -->
+    <div class="divi">
+        <label for="email"><strong>Qual o seu e-mail</strong></label>
+        <br>
+        <input type="email" id="email" placeholder="Digite seu E-mail">
+    </div>
+    <!-- Button -->
     <div class="button">
         <button onclick="testaFormulario()"><strong>Confirme aqui</strong></button>
-    </div>   
+    </div>
 </body>
-<script src="js.js/js.js"></script>
+<script src="..//js/js.js"></script>
+<script src="..//js/cep.js"></script>
+<script src="..//js/limpa.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+<script>
+    $('#cep').mask('00000-000');
+</script>
+
 </html>
